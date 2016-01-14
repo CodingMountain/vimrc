@@ -37,6 +37,7 @@ Plugin 'OrangeT/vim-csharp'
 Plugin 'bling/vim-airline'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
