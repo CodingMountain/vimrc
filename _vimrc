@@ -172,10 +172,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-map b /
-map <c-b> ?
-
-nnoremap <expr> n  'Nn'[v:searchforward]
 nnoremap <expr> N  'nN'[v:searchforward]
 
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
