@@ -67,7 +67,6 @@ autocmd FileType Python :UltiSnipsAddFiletypes Python
 autocmd FileType cs :UltiSnipsAddFiletypes cs
 
 autocmd BufEnter,TextChanged,InsertLeave *.cs SyntasticCheck
-autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
 autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<cr>
 autocmd FileType cs nnoremap <leader>fi :OmniSharpFindImplementations<cr>
 autocmd FileType cs nnoremap <leader>ft :OmniSharpFindType<cr>
@@ -78,8 +77,8 @@ autocmd FileType cs nnoremap <leader>x  :OmniSharpFixIssue<cr>
 autocmd FileType cs nnoremap <leader>fx :OmniSharpFixUsings<cr>
 autocmd FileType cs nnoremap <leader>tt :OmniSharpTypeLookup<cr>
 autocmd FileType cs nnoremap <leader>dc :OmniSharpDocumentation<cr>
-autocmd FileType cs nnoremap <C-K> :OmniSharpNavigateUp<cr>
-autocmd FileType cs nnoremap <C-J> :OmniSharpNavigateDown<cr>
+autocmd FileType cs nnoremap <C-9> :OmniSharpNavigateUp<cr>
+autocmd FileType cs nnoremap <C-0> :OmniSharpNavigateDown<cr>
 autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 autocmd FileType cs map <buffer> <C-r> :Rename<Space>
 
@@ -122,6 +121,9 @@ set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
 let mapleader=" "
+
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 40
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
