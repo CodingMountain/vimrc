@@ -1,3 +1,4 @@
 # vimrc
-a repository of my vim config
-This vim config is mostly centred around c# development
+My personal Vim config file.
+
+Currently geared towards front end development.
